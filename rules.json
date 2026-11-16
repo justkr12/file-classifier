@@ -1,0 +1,29 @@
+{
+  "default_target": null,
+  "rules": [
+    {
+      "type": "keyword",
+      "patterns": [
+        "invoice",
+        "receipt",
+        "영수증"
+      ],
+      "target": "Receipts"
+    },
+    {
+      "type": "regex",
+      "patterns": [
+        "^IMG_\\d+",
+        "^Screenshot"
+      ],
+      "target": "Images"
+    },
+    {
+      "type": "regex",
+      "patterns": [
+        "\\.(zip|7z|rar)$"
+      ],
+      "target": "Archives"
+    }
+  ]
+}
