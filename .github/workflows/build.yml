@@ -22,7 +22,7 @@ jobs:
       - name: Install PyInstaller
         run: python -m pip install pyinstaller==6.11.1
       - name: Build exe
-        run: python -m PyInstaller --onefile --console --name FileClassifier classifier.py
+        run: python -m PyInstaller --onefile --windowed --name FileClassifier gui.py
       - name: Package
         shell: pwsh
         run: |
